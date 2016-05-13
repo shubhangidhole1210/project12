@@ -9,6 +9,8 @@
 <body>
     <table border="1">
     <tr>
+    <!-- All the names Should start with capital letters for e.g. change id to Id as user
+    is going to read this in UI naming should be proper -->
              <th>id</th>
               <th>name</th>
               <th>mobile</th>
@@ -18,6 +20,7 @@
               <th>requestUpdateTime</th>
               
     </tr>
+    <!-- TODO Fix the warning here -->
     <c:forEach var="userRequest" items="${userRequests}">
 			<tr>
 				<td>${userRequest.id}</td>
