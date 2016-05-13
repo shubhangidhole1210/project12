@@ -32,14 +32,15 @@ public class UserRequestServlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		//TODO call getAllUserRequests() here
 		response.setContentType("text/html");
 	      PrintWriter out = response.getWriter();
 	      ServletContext context=getServletContext();
-	      RequestDispatcher dispatcher=context.getRequestDispatcher("viewAllUserRequest.JSP");
+	      RequestDispatcher dispatcher=context.getRequestDispatcher("/viewAllUserRequest.jsp");
 	      dispatcher.forward(request, response);
 	}
 	
+	//TODO Return List<UserRequest> in method getAllUserRequests
 	public void getAllUserRequests()
 	{
 		try{
